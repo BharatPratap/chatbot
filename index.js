@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const { connect, getClient } = require('./db');
 
 // Your OpenAI API key
-const OPENAI_API_KEY = 'OPEN_AI_API_KEY';
+const OPENAI_API_KEY = process.env.OPEN_AI_API_KEY;
 
 connect();
 let client;
